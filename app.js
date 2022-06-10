@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 });
 app.post("/", (req, res) => { 
     // Get the POST req when user click view
-    const key = "30aafa44186f5691dfbf24a44ed73b94";
+    const key = "<YOUR OWN API KEY>";
     const country = req.body.countryName; // Store the user input
     const API_URL = `https://api.openweathermap.org/data/2.5/weather?id=524901&appid=${key}&units=metric&q=${country}`
     // URL authentication and parameters using POSTMAN
